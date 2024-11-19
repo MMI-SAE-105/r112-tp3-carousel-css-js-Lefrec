@@ -10,8 +10,10 @@ if (carousel) {
     // Scroll au clic sur le bouton précédent
     prevButton.addEventListener("click", (event) => {
         carousel.scrollBy({ left: -premierItem.clientWidth, behavior: "smooth" });
+        if (carousel.scrollLeft <= 0) {
+            console.log("reached the end")
+        };
     });
-
     // Scroll au clic sur le bouton suivant
     nextButton.addEventListener("click", (event) => {
         carousel.scrollBy({ left: +premierItem.clientWidth, behavior: "smooth" });
