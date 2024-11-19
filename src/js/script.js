@@ -10,6 +10,7 @@ if (carousel) {
     // Scroll au clic sur le bouton précédent
     prevButton.addEventListener("click", (event) => {
         carousel.scrollBy({ left: -premierItem.clientWidth, behavior: "smooth" });
+        //test de détection de la fin du scroll possible à gauche
         if (carousel.scrollLeft <= 0) {
             console.log("reached the end")
         };
