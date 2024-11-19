@@ -26,6 +26,9 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
   margin: 16px 0px 16px;/* Marge de 16px en haut et en bas - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
 }
 .carousel__button {
+  position: absolute;
+  top: 300px;
+  right: 16px;
   width: 50px;/* Largeur du bouton 50px - https://developer.mozilla.org/fr/docs/Web/CSS/width */
   height: 50px;/* Hauteur du bouton 50px - https://developer.mozilla.org/fr/docs/Web/CSS/height */
   display: flex;/* Utilise flexbox pour aligner le contenu du bouton - https://developer.mozilla.org/fr/docs/Web/CSS/display */
@@ -34,7 +37,9 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
   border: 1px;/* Bordure solide de 1px - https://developer.mozilla.org/fr/docs/Web/CSS/border */
   border-radius: 100%;/* Bordure arrondie pour faire un cercle - https://developer.mozilla.org/fr/docs/Web/CSS/border-radius */
 }
+
 .carousel__button--prev {
+  right: 82px;
   transform: rotate(180deg);/* Fait pivoter le bouton de 180 degrés - https://developer.mozilla.org/fr/docs/Web/CSS/transform */
 }
 
@@ -48,12 +53,11 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 }
 
 .carousel__item {
-  flex: 1 0 100%;/* L'élément prend 1 part de l'espace disponible, ne rétrécit pas, et a une largeur de base de 260px - https://developer.mozilla.org/fr/docs/Web/CSS/flex */
+  flex: 1 0 50%;/* L'élément prend 1 part de l'espace disponible, ne rétrécit pas, et a une largeur de base de 260px - https://developer.mozilla.org/fr/docs/Web/CSS/flex */
   scroll-snap-align: center;/* Aligne l'élément au centre lors du défilement - https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-align */
 }
 
 .carousel__item img {
   display: block;/* Affiche l'image comme un bloc - https://developer.mozilla.org/fr/docs/Web/CSS/display */
   width: 100%;
-  height: auto;
 }
