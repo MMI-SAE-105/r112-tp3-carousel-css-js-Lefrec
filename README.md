@@ -1,6 +1,6 @@
-- nom :
-- prénom :
-- URL Netlify :
+- nom : Vincent
+- prénom : Paolo
+- URL Netlify : https://tp3-carousel-css-js-lefrec.netlify.app
 
 # Travail
 
